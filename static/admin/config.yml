@@ -12,6 +12,6 @@ collections:
     fields: # The fields for each document, usually in front matter
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Template", name: "template", widget: "hidden", default: "blog_post.html"}
-      - {label: "Date", name: "date", widget: "date", format: "YYYY-MM-DD"}
+      - {label: "Date", name: "date", widget: "date"}
       - {body: "Body", name: "body", widget: "markdown"}
       
