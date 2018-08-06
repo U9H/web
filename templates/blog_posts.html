@@ -2,7 +2,11 @@
 
 {% block content %}
 <div class="nav-bumper">
-
 </div>
+
+{% set section = get_section(path="blog/_index.md") %}
+{% for post in section.pages %}
+    <h1>post.title</h1>
+{% endfor %}
 
 {% endblock content %}
