@@ -13,3 +13,7 @@ build_search_index = true
 
 [extra]
 # Put all your custom variables here
+u9h_menu = [ 
+    {url = "/blog", name = "Blog"},
+    {url = "mailto:alex@u9h.design", name = "Contact"}
+]

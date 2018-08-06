@@ -3,20 +3,37 @@
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>U6H</title>
+    <title>U9H</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="/main.css" />
+    <link href="https://fonts.googleapis.com/css?family=Barlow:300,400,500,600" rel="stylesheet">
     <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 </head>
 <body>
-    <div class="full-flex">
-        <div class="center">
-            <video autoplay="autoplay" muted="true" loop="true" class="video">
-                <source src="/media/logo.mp4" type="video/mp4" />
-            </video>
-            <h2>Make a sacrifice to the Great One to receive your reward.</h2>
+    <nav>
+        <div class="container">
+            <a href="/">
+                <img class="col-2" src="/media/logo.png" />
+            </a>
+            <div class="col-10 v-middle align-right links">
+                {% for item in config.extra.u9h_menu %}
+                    <a href="{{ item.url }}">
+                        {{ item.name }}
+                    </a>
+                {% endfor %}
+            </div>
+        </div>
+    </nav>
+    {% block content %}
+    <div class="hero center-children-vertically">
+        <div class="container small inverse">
+            <div class="col-12">
+                <h1>Designing the digital future, one step at a time.</h1>
+                <h3>We are a fully-digital design studio committed to  transparency and creativity.</h3>
+            </div>
         </div>
     </div>
+    {% endblock content %}
 
     <script>
         if (window.netlifyIdentity) {
