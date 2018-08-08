@@ -7,7 +7,12 @@
 
 $padding: 12px;
 $size_1: 56px;
+$size_2: 36px;
 $size_3: 24px;
+
+$large: 1100px;
+$medium: 750px;
+$small: 450px;
 
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
     margin: 0;
@@ -51,6 +56,7 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 
 body {
   font-family: 'Barlow', sans-serif;
+  color: #474343;
 }
 
 nav {
@@ -72,31 +78,61 @@ nav {
   grid-template-columns: repeat(12, 1fr);
   grid-column-gap: 16px;
   width: 100%;
+
+  &.padded {
+    padding: $padding;
+  }
+
+  &.padded-h {
+    padding: $padding;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
   @media only screen and (min-width: 1620px) {
-    max-width: 1200px;
+    max-width: 1440px;
     margin: 0 auto;
     &.small {
       max-width: 900px;
     }
   }
 
-  
+  .col {
+    &.w2 { grid-column-end: span 2; }
+    &.w3 { grid-column-end: span 3; }
+    &.w4 { grid-column-end: span 4; }
+    &.w5 { grid-column-end: span 5; }
+    &.w6 { grid-column-end: span 6; }
+    &.w7 { grid-column-end: span 7; }
+    &.w8 { grid-column-end: span 8; }
+    &.w9 { grid-column-end: span 9; }
+    &.w10 { grid-column-end: span 10; }
+    &.w11 { grid-column-end: span 11; }
+    &.w12 { grid-column-end: span 12; }
 
-  >.col-2 { grid-column-end: span 2; }
-  >.col-3 { grid-column-end: span 3; }
-  >.col-4 { grid-column-end: span 4; }
-  >.col-5 { grid-column-end: span 5; }
-  >.col-6 { grid-column-end: span 6; }
-  >.col-7 { grid-column-end: span 7; }
-  >.col-8 { grid-column-end: span 8; }
-  >.col-9 { grid-column-end: span 9; }
-  >.col-10 { grid-column-end: span 10; }
-  >.col-11 { grid-column-end: span 11; }
-  >.col-12 { grid-column-end: span 12; }
+    &.v-middle { align-self: center; }
+    &.v-top { align-self: start; }
+    &.v-bottom { align-self: end; }
 
-  >.v-middle { align-self: center; }
-  >.v-top { align-self: start; }
-  >.v-bottom { align-self: end; }
+    &.large {
+      @media only screen and (max-width: $large) {
+        grid-column-end: span 12;
+      }
+    }
+
+    &.med {
+      @media only screen and (max-width: $medium) {
+        grid-column-end: span 12;
+      }
+    }
+
+    &.small {
+      @media only screen and (max-width: $small) {
+        grid-column-end: span 12;
+      }
+    }
+
+  }
 
   &.inverse {
     * {
@@ -120,24 +156,53 @@ h1 {
   font-weight: 600;
 }
 
+h2 {
+  font-size: $size_2;
+  margin-bottom: ($size_2 / 2);
+  font-weight: 600;
+}
+
 h3 {
   font-size: $size_3;
-  margin-bottom: ($size_1 / 2);
+  margin-bottom: ($size_3 / 2);
 }
 
 .hero {
   height: 100vh;
-  background: #1f256e; /* Old browsers */
-  background: -moz-linear-gradient(top, #1f256e 0%, #1298b4 100%); /* FF3.6-15 */
-  background: -webkit-linear-gradient(top, #1f256e 0%,#1298b4 100%); /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(to bottom, #1f256e 0%,#1298b4 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1f256e', endColorstr='#1298b4',GradientType=0 ); /* IE6-9 */
+  background: url(/media/background.svg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.full-bg {
+  background: url(/media/background.svg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+a.block {
+  text-decoration: none;
+  color: inherit;
 }
 
 .nav-bumper {
-  background: #1f256e; /* Old browsers */
   height: 76px;
   width: 100%;
-  position: fixed;
-  z-index: -100;
+}
+
+.card {
+  background: white;
+  padding: 24px;
+  padding-left: 48px;
+  padding-right: 48px;
+  border-radius: 2px;
+  box-shadow: 2px 2px 35px rgba(0, 0, 0, 0.05);
+}
+
+.initial-content {
+  margin-top: $padding * 8;
 }

@@ -1,0 +1,15 @@
+{% extends "blog_posts.html" %}
+{% block content %}
+<div class="nav-bumper"></div>
+
+<div class="container small initial-content">
+        <section class="col w12 large">
+            <h2>{{ page.title }}</h2>
+            <p> 
+                {{ page.content | safe }} 
+            </p>
+        </section>
+    </a>
+</div>
+
+{% endblock content %}
