@@ -11,6 +11,8 @@ highlight_code = true
 # Whether to build a search index to be used later on by a JavaScript library
 build_search_index = true
 
+theme = "newsletter"
+
 [extra]
 # Put all your custom variables here
 u9h_menu = [ 
