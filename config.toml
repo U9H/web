@@ -16,6 +16,6 @@ theme = "newsletter"
 [extra]
 # Put all your custom variables here
 u9h_menu = [ 
-    {url = "/blog", name = "Blog"},
+    #{url = "/blog", name = "Blog"},
     {url = "mailto:alex@u9h.design", name = "Contact"}
 ]
