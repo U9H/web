@@ -24,7 +24,15 @@ menu = [
 
 [extra.newsletter.home]
 header = "More than just design."
-subheader = false
+subheader = "We are a fully-digital studio committed to creatives."
+people = [
+    { name = "Alexander Lozada", image = "alexander.jpg", position = "Founder", location = "Fort Worth, TX" },
+    { name = "Christopher Wood", image = "chris.jpg", position = "Composition", location = "Pittsburgh, PA" },
+    { name = "Jason Shultz", image = "jason.jpg", position = "Animation", location = "Dallas, TX" },
+    { name = "Marisha Lozada", image = "default.svg", position = "Illustration", location = "New York, NY" },
+    { name = "Jack Kaiser", image = "default.svg", position = "Design", location = "Charlottesville, VA" },
+    { name = "Kori Webster", image = "default.svg", position = "Agent", location = "Fort Worth, TX" },
+]
 
 [extra.newsletter.blog]
 nav_background = "/media/default_pattern"
