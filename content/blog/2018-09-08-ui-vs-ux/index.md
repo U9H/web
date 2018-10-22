@@ -8,8 +8,11 @@ description = "A guide to everything you need to know about UI and UX design, wi
 [taxonomies]
 authors = ["Alexander Lozada"]
 categories = ["design"]
+
+[extra]
+cover = "cover.png"
 +++
- **If you're looking to become a better designer, or want to know what makes some apps great, understanding UI & UX in depth is essential.**  
+**If you're looking to become a better designer, or want to know what makes some apps great, understanding UI & UX in depth is essential.**  
 
 While both fields relate, individual practice and thought are still necessary.
 
