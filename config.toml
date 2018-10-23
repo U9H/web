@@ -36,5 +36,6 @@ people = [
 
 [extra.newsletter.blog]
 nav_background = "/media/default_pattern"
+adwords_code = "ca-pub-9155129248808225"
 menu = [
 ]
