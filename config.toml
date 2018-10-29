@@ -41,3 +41,8 @@ mailchimp_embed = "<div id='mc_embed_signup'><form action='https://design.us19.l
 disqus_url = "u9h.disqus.com"
 menu = [
 ]
+
+[extra.newsletter.blog.mailchimp]
+prefix = "design.us19"
+uid = "7d95c50d4419888f846703410"
+id = "de6298b77b"
