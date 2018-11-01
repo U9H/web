@@ -41,17 +41,17 @@ User interface (UI) design is the application of design rules to interactive or 
 ## It helps users know where to look first
 
 Newspapers contain a ton of words, images, and advertisements.  Yet readers still navigate them with ease.  How is that possible?  Consider the following examples.  Which is easier to parse?
-{{ image(path="blog/ui-vs-ux/comparison.png", description="Small changes can make a huge difference.") }}
+{{ image(path="blog/ui-vs-ux/comparison.png", description="Small changes can make a huge difference.", alt="A split image of text.  The right side is more organized due to hierarchy.") }}
 
 You likely chose the second image, but why is that?  Limited to text elements, font size groups content into easier chunks.  This is an aspect of **hierarchy**.  Hierarchy in design dictates what viewers see first.
 
 Hierarchy is not limited to sizing.  It involves anything that makes an element stand out.  We can use color, spacing, and font to denote hierarchical elements.
 
-{{ image(path="blog/ui-vs-ux/hierarchy-none.png", description="With no hierarchy, all elements appear to have equal importance.") }}
+{{ image(path="blog/ui-vs-ux/hierarchy-none.png", description="With no hierarchy, all elements appear to have equal importance.", alt="An example of a layout without hierarchy") }}
 
-{{ image(path="blog/ui-vs-ux/hierarchy-color.png", description="A different color can draw attention and establish hierarchy.", no_top_margin=true) }}
+{{ image(path="blog/ui-vs-ux/hierarchy-color.png", description="A different color can draw attention and establish hierarchy.", no_top_margin=true, alt="Using color to show hierarchy") }}
 
-{{ image(path="blog/ui-vs-ux/hierarchy-size.png", description="Size has a similar effect.", no_top_margin=true) }}
+{{ image(path="blog/ui-vs-ux/hierarchy-size.png", description="Size has a similar effect.", no_top_margin=true, alt="Using size to show hierarchy") }}
 
 Hierarchy is present everywhere — not only print media.  This site uses *spacing*, *font*, and *sizes* to split up elements.  
 
@@ -61,17 +61,17 @@ Whenever you use an app on your phone, you're making decisions. “Should I make
 
 Imagine you're creating a website, and you want to link to your friend's blog.  How should that link look?  You use plain text that says “Look at this blog!” in your first iteration.
 
-{{ image(path="blog/ui-vs-ux/affordances.png", description="Here we only have text.", notext=true) }}
+{{ image(path="blog/ui-vs-ux/affordances.png", alt="Buttons are UI elements with affordances") }}
 
 This isn't working, but why?  It's because users expect interactive elements to share specific visual aspects.  In your case, a simple underline will denote a hyperlink.  These expectations are examples of [affordances](https://en.wikipedia.org/wiki/Affordance) (which also deserve their own story).
 
-{{ image(path="blog/ui-vs-ux/affordances-b.png", description="A simple underline shows that this is a link.", notext=true) }}
+{{ image(path="blog/ui-vs-ux/affordances-b.png", alt="A simple underline shows that this is a link.") }}
 
 Buttons are rectangles with text.  Links have underlines.  Text inputs have labels.  Applying expected visual styles to interfaces allows us to show behavior without explanation.  This doesn't mean we can't experiment.  But having structure helps us to build unique interfaces with clarity.
 
 There is much, much more to UI design, and it deserves its own story.  These examples mean to give an idea of UI's importance.
 
-{{ image(path="blog/ui-vs-ux/link.png", description="We expect certain UI elements and interactions when using a digital device.") }}
+{{ image(path="blog/ui-vs-ux/link.png", description="We expect certain UI elements and interactions when using a digital device.", alt="A retro style scene with a computer monitor and application window") }}
 
 # In-depth: User Experience
 
@@ -79,7 +79,7 @@ User experience (UX) design focuses on how users interact with something.  Think
 
 For instance, assume you are designing a web store, and you want to guide a user through checkouts.  You want the *flow* of those interactions to be as easy as possible so that nobody gets frustrated.  You would make the user go through logical pages and clicks.
 
-{{ image(path="blog/ui-vs-ux/user-journey.png", description="You could even shorten this process and add a simple “buy now” button like Amazon.") }}
+{{ image(path="blog/ui-vs-ux/user-journey.png", description="You could even shorten this process and add a simple “buy now” button like Amazon.", alt="A simple example of a text-based user journey") }}
 
 This is a very simple example of a **user journeys**.  User journeys illustrate what steps users go through to accomplish a task, and are a fundamental aspect of UX design.  Note that the journey didn't need to include anything but text.  That's because UI covers visual design, while UX covers the base interactions.  This is a simplification, but it generally holds true.  Okay — I know I said UX is part of visual design, and that's true for app and web design.  However, the concepts of UX apply almost everywhere!
 
@@ -173,7 +173,7 @@ Imagine you have a web store again.  You have an “Add to cart” button, as we
 
 You can guide the user via UI design into your desired path.  We can make the “Add to cart” button more visible and thus more likely seen.
 
-{{ image(path="blog/ui-vs-ux/ui-ux-overlap.png", description="UI and UX can work together to help the user select options easily.") }}
+{{ image(path="blog/ui-vs-ux/ui-ux-overlap.png", description="UI and UX can work together to help the user select options easily.", alt="Comparing different versions of sites with alternate UI and UX") }}
 
 Note that "Big and colorful" does not always mean users will happily click through, especially when other UI elements are at play.
 

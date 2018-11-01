@@ -21,6 +21,7 @@ menu = [
     # {url = "/blog", name = "Newsletter"},
     {url = "mailto:alex@u9h.design", name = "Contact"}
 ]
+description = "We are a fully-digital studio committed to creatives."
 
 [extra.newsletter.home]
 header = "More than just design."
