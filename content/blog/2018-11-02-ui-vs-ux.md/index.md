@@ -1,8 +1,8 @@
 +++
 title = "UI vs. UX in-depth: Why you need to know the difference"
 template = "blog/post.html"
-date = 2018-09-08T02:53:02.263Z
-draft = true
+date = 2018-11-02T20:53:02.263Z
+draft = false
 description = "A guide to everything you need to know about UI and UX design, with easy-to-follow examples."
 
 [taxonomies]
