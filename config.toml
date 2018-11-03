@@ -24,6 +24,7 @@ menu = [
     {url = "/blog", name = "Newsletter"},
     {url = "mailto:alex@u9h.design", name = "Contact"}
 ]
+analytics_code = "UA-128627384-1"
 description = "We are a fully-digital studio committed to creatives."
 
 [extra.newsletter.home]
